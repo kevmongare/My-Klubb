@@ -163,7 +163,7 @@ function App() {
                 <a href="mailto:info@jurnevents.com" className="text-orange-500 hover:underline">info@jurnevents.com</a>
                 </div>
                 <div className="flex items-center space-x-4">
-                <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="max-w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 5h2l3.6 7.59a1 1 0 00.9.41h7.02a1 1 0 00.92-.61l3.38-7.09M16 21a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z" />
                 </svg>
@@ -171,7 +171,7 @@ function App() {
                 </div>
             </div>
             <div className="mt-6">
-            <iframe className = "w-150 h=150 shadow-2xl rounded-2xl referrerpolicy="
+            <iframe className = "md:w-150 w-50 h=150 shadow-2xl rounded-2xl referrerpolicy="
             loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9221470790144!2d36.94046947487992!3d-1.3974949985893008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d0078fdcce7%3A0xdde3324ee69cae62!2sMlolongo%20gossip!5e1!3m2!1sen!2ske!4v1747402783315!5m2!1sen!2ske">
             
