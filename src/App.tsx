@@ -48,10 +48,9 @@ function App() {
               </div></div> */}
             </div>
            
-              <div className=' relative overflow-hidden'>
+              
                 <img src={About} alt="" className=' relative h-100 rounded-lg shadow-lg overflow-hidden'/>
-                <div className='absolute inset-0 bg-gradient-to-r from-transparent to-blue-950/60 obje '></div>
-              </div>
+               
 
               
             </div>
