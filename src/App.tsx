@@ -56,7 +56,7 @@ function App() {
             </div>
             
 
-    <section id='About-t' className="bg-white  shadow-blue-200 shadow-lg hover:shadow-2xl text-gray-900 py-10 w-7xl mx-auto rounded-sm">
+    <section id='About-t' className="bg-white  shadow-blue-200 shadow-lg hover:shadow-2xl text-gray-900 py-10 max-w-7xl mx-auto rounded-sm">
     <div className="max-w-6xl mx-auto px-4 text-center">
       <h1 className="text-5xl font-bold mb-4 text-orange-500">About Us</h1>
       <hr />
