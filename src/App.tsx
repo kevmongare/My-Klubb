@@ -89,34 +89,6 @@ function App() {
       </div>
     </div>
 </section>
-
-<section id='categories' className='mx-auto max-w-7xl md:columns-4'>
-  <div className='relative'>
-    <h1>Tech Projects</h1>
-    <img src="vite.svg" alt="" />
-    <div className='bg-black/50 absolute inset-0'></div>
-
-  </div>
-  <div>
-    <h1>Tech Projects</h1>
-    <img src="vite.svg" alt="" />
-    <div></div>
-
-  </div>
-  <div>
-    <h1>Tech Projects</h1>
-    <img src="vite.svg" alt="" />
-    <div></div>
-
-  </div>
-  <div>
-    <h1>Tech Projects</h1>
-    <img src="vite.svg" alt="" />
-    <div></div>
-
-  </div>
-
-</section>
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white rounded-sm p-10 mt-5 shadow-xl" id='contact'>
     
   
