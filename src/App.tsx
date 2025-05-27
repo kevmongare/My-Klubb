@@ -49,8 +49,8 @@ function App() {
             </div>
            
               
-                <img src={About} alt="" className='  h-100 rounded-lg shadow-lg'/>
-               
+                <img src={About} alt="" className='  h-100 rounded-lg shadow-lg index-30'/>
+  
 
               
             </div>
