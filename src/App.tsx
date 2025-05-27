@@ -36,7 +36,7 @@ function App() {
       </div>
       </ul>
       </section>
-    <div className='justify-between flex pt-15 pb-5 h-3/4 max-w-7xl mx-auto items-center'>
+    <div className='justify-between grid md:flex pt-15 pb-5 h-3/4 max-w-7xl mx-auto items-center'>
      
       <div className='pl-8'>
               <h1 className='text-gray-800 text-7xl font-semibold tracking-tight text-balance '>POST  <br /> <span className='text-orange-600 font-stretch-130%'>PROJECTS</span><br /> GET HIRED!</h1>
