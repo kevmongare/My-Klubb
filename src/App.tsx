@@ -49,7 +49,7 @@ function App() {
             </div>
            
               
-                <img src={About} alt="" className=' relative h-100 rounded-lg shadow-lg overflow-hidden'/>
+                <img src={About} alt="" className='  h-100 rounded-lg shadow-lg'/>
                
 
               
