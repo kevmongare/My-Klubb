@@ -18,7 +18,7 @@ function App() {
       <Route path="/login" element={<Login />} />
 
     </Routes>
-    <section  className='position-top sticky px-25 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 py-0'>
+    <section  className='position-top sticky px-5 md:px-25 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 py-0'>
       <h1 className='flex items-center text-2xl font-extrabold text-orange-600'><img src={Logo} alt="" className='h-20' />My Klub</h1>
     
         <ul className='flex items-center'>
