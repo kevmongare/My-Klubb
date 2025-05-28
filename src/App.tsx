@@ -18,8 +18,8 @@ function App() {
       <Route path="/login" element={<Login />} />
 
     </Routes>
-    <section  className='position-top sticky px-5 md:px-25 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 py-0'>
-      <h1 className='flex items-center text-2xl font-extrabold text-orange-600'><img src={Logo} alt="" className='h-20 display-none md:display-block' />My Klub</h1>
+    <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
+      <h1 className='flex items-center md:text-2xl text-sm font-extrabold text-orange-600'><img src={Logo} alt="" className='h-20 hidden md:flex' />My Klub</h1>
     
         <ul className='flex items-center'>
           <a href="" className='mr-5 text-1xl hover:text-orange-600 text-gray-800'> Home </a>
@@ -29,7 +29,7 @@ function App() {
         
       
       <div>
-        <a href="" className="inline-block rounded-full bg- bg-blue-950 border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white hover:bg-primary-800 mr-2 hover:bg-orange-500">Register</a>
+        <a href="" className=" rounded-full bg- bg-blue-950 border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white hover:bg-primary-800 mr-2 hover:bg-orange-500 hidden md:inline-block">Register</a>
         
           <Link to="/login" className=" text-gray-900 ring-1 ring-orange-500 py-2 px-4 text-sm font-medium rounded-full hover:bg-orange-500 hover:ring-0 hover:text-white" target='blank'>Log in <span aria-hidden="true">&rarr;</span></Link>
         
@@ -49,7 +49,7 @@ function App() {
             </div>
            
               
-                <img src={About} alt="" className='  h-100 rounded-lg shadow-lg index-30'/>
+                <img src={About} alt="" className='relative z-10 transform scale-80 md:scale-100 h-100 rounded-lg shadow-lg transition duration-300'/>
   
 
               
@@ -59,27 +59,27 @@ function App() {
     <section id='About-t' className="bg-white  shadow-blue-200 shadow-lg hover:shadow-2xl text-gray-900 py-10 max-w-7xl mx-auto rounded-sm">
     <div className="max-w-6xl mx-auto px-4 text-center">
       <h1 className="text-5xl font-bold mb-4 text-orange-500">About Us</h1>
-      <hr />
+      
 
       <div className='text-center'>
         <p className="text-1xl max-w-6xl mx-auto text-gray-600 pt-3 text-center rounded-lg">
          My Klub is a system to help me and my friends showcase our work and connect with companies seeking talent
          </p>
          <section className=' '>
-              <div className="max-w-7xl mx-auto columns-2 md:columns-4 gap-8 text-center p-8 bg-gradient-to-b from-transparent to-white rounded-lg mt-10">
-            <div className=''>
-                <h1 className="text-blue-900 font-bold text-4xl">5000+</h1>
+              <div className="max-w-7xl mx-auto columns-1 md:columns-4 gap-8 text-center p-8 bg-gradient-to-b from-transparent to-white rounded-lg mt-10">
+            <div className='border-b-1 p-1 md:border-none'>
+                <h1 className="text-blue-900 font-bold text-4xl ">5000+</h1>
                 <p className="text-gray-500 text-xs">People served</p>
             </div>
-             <div >
+             <div className='border-b-1 p-1 md:border-none' >
                 <h1 className="text-blue-900 font-bold text-4xl">99%</h1>
                 <p className="text-gray-500">Success Rate</p>
             </div>
-            <div>
+            <div className='border-b-1 p-1 md:border-none'>
                 <h1 className="text-blue-900 font-bold text-4xl">150+</h1>
                 <p className="text-gray-500">Events hosted</p>
             </div>
-            <div>
+            <div className='border-b-1 p-1 md:border-none'>
                 <h1 className="text-blue-900 font-bold text-4xl">5</h1>
                 <p className="text-gray-500">Branches within the country</p>
             </div>
@@ -88,7 +88,7 @@ function App() {
       </div>
     </div>
 </section>
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white rounded-sm p-10 mt-5 shadow-xl" id='contact'>
+    <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white rounded-sm p-10 mt-5 shadow-xl index-10" id='contact'>
     
   
             <div className="flex-1 p-8 ">
