@@ -89,7 +89,6 @@ function App() {
     </div>
 </section>
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 pb-5 bg-white rounded-sm p-10 mt-5 shadow-xl index-10" id='contact'>
-    
   
             <div className="flex-1 p-8 ">
             <div className="text-center">
@@ -182,7 +181,7 @@ function App() {
         </div>
 
               
-             <footer className="bg-gray-800 text-white text-center py-6">
+             <footer className="bg-gray-800 text-white text-center py-2">
             <p>&copy; 2025 My Klub. All rights reserved.</p>
              </footer>
    
