@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom';
 // import { useState } from 'react'
+import { useEffect } from 'react';
 import './App.css'
 import Logo from "./assets/Mk.png"
 import About from "./assets/Aboutus.png"
@@ -12,6 +13,30 @@ import Login from './login';
 
 function App() {
 
+  // ✅ Proper way to interact with the DOM in React
+  useEffect(() => {
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    const toggleMenu = () => {
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    };
+
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMenu);
+    }
+
+    // ✅ Clean up to avoid memory leaks
+    return () => {
+      if (menuBtn) {
+        menuBtn.removeEventListener('click', toggleMenu);
+      }
+    };
+  }, []); // Runs once after component mounts
+
+
   return (
     <>
     <Routes>
@@ -21,11 +46,13 @@ function App() {
     <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
       <h1 className='flex items-center md:text-2xl text-sm font-extrabold text-orange-600'><img src={Logo} alt="" className='h-20 hidden md:flex' />My Klub</h1>
     
-        <ul className='flex items-center'>
-          <a href="" className='mr-5 text-1xl hover:text-orange-600 text-gray-800'> Home </a>
-          <a href="#About-t" className='mr-5 text-1xl hover:text-orange-600 text-gray-700'> About</a>
-          <a href="" className='mr-5 text-1xl hover:text-orange-600 text-gray-700'>Projects</a>
-          <a href="#contact" className='mr-5 text-1xl hover:text-orange-600 text-gray-700'>Contact</a>
+        <ul 
+        id='menu'
+        className='hidden absolute top-16 left-0 w-full bg-orange-600 md:static md:flex md:space-x-6 md:items-center md:w-auto py-3 px-3'>
+          <a href="" className='mr-5 block text-center text-1xl py-2 text-white'> Home </a>
+          <a href="#About-t" className='mr-5 block text-1xl text-center  py-2 text-white'> About</a>
+          <a href="" className='mr-5 text-1xl block text-center text-white  py-2'>Projects</a>
+          <a href="#contact" className='mr-5 block text-1xl text-center text-white  py-2'>Contact</a>
         
       
       <div>
@@ -35,6 +62,12 @@ function App() {
         
       </div>
       </ul>
+      <div className='md:hidden'>
+        <button id="menu-btn"
+         className='border-1 border-orange-600 rounded-full py-1 px-4 hover:bg-orange-600 hover:text-white'>Menu</button>
+      </div>
+
+
       </section>
     <div className='justify-between grid md:flex pt-15 pb-5 h-3/4 max-w-7xl mx-auto items-center'>
      
