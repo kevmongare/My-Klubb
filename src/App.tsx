@@ -43,7 +43,7 @@ function App() {
       <Route path="/login" element={<Login />} />
 
     </Routes>
-    <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white/80 md:py-0 z-50'>
+    <section  className='position-top sticky px-5 md:px-25 py-5 text-gray-800 postition-0 w-full shadow-sm left-0 top-0 mx-auto justify-between flex items-center bg-white md:bg-white/80 md:py-0 z-50'>
       <h1 className='flex items-center md:text-2xl text-sm font-extrabold text-orange-600'><img src={Logo} alt="" className='h-20 hidden md:flex' />My Klub</h1>
     
         <ul 
@@ -58,7 +58,7 @@ function App() {
       <div>
         <a href="" className=" rounded-full bg- bg-blue-950 border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white hover:bg-primary-800 mr-2 hover:bg-orange-500 hidden md:inline-block">Register</a>
         
-          <Link to="/login" className=" text-gray-900 ring-1 ring-orange-500 py-2 px-4 text-sm font-medium rounded-full hover:bg-orange-500 hover:ring-0 hover:text-white" target='blank'>Log in <span aria-hidden="true">&rarr;</span></Link>
+          <Link to="/login" className="text-white md:text-gray-900 ring-white ring-1 md:ring-orange-500 py-2 px-4 text-sm font-medium rounded-full hover:bg-orange-500 hover:ring-0 hover:text-white items-center" target='blank'>Log in <span aria-hidden="true">&rarr;</span></Link>
         
       </div>
       </ul>
@@ -82,7 +82,7 @@ function App() {
             </div>
            
               
-                <img src={About} alt="" className='relative z-10 transform scale-80 md:scale-100 h-100 rounded-lg shadow-lg transition duration-300'/>
+                <img src={About} alt="" className='relative z-10 transform scale-80 md:scale-100 h-50 md:h-100 rounded-lg shadow-lg transition duration-300'/>
   
 
               
