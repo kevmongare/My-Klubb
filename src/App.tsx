@@ -48,11 +48,11 @@ function App() {
     
         <ul 
         id='menu'
-        className='hidden absolute top-16 left-0 w-full bg-orange-500 md:text-orange-600 md:bg-transparent md:static md:flex md:space-x-6 md:items-center md:w-auto py-3 px-3'>
-          <a href="" className='mr-5 block text-center text-1xl py-2 text-white'> Home </a>
-          <a href="#About-t" className='mr-5 block text-1xl text-center  py-2 text-white'> About</a>
-          <a href="" className='mr-5 text-1xl block text-center text-white  py-2'>Projects</a>
-          <a href="#contact" className='mr-5 block text-1xl text-center text-white  py-2'>Contact</a>
+        className='hidden absolute top-16 left-0 w-full bg-orange-500  md:bg-transparent md:static md:flex md:space-x-6 md:items-center md:w-auto py-3 px-3'>
+          <a href="" className='mr-5 block text-center text-1xl py-2 text-white md:text-orange-600'> Home </a>
+          <a href="#About-t" className='mr-5 block text-1xl text-center  py-2 text-white md:text-orange-600'> About</a>
+          <a href="" className='mr-5 text-1xl block text-center text-white  py-2 md:text-orange-600'>Projects</a>
+          <a href="#contact" className='mr-5 block text-1xl text-center text-white  py-2 md:text-orange-600'>Contact</a>
         
       
       <div>
