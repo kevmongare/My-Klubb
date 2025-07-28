@@ -26,17 +26,25 @@ function Log(e:React.FormEvent<HTMLFormElement>){
      
         <form onSubmit={Log} className="bg-orange-500 p-5 grid w-2/4 mx-auto justify-center rounded-xl pt-"> 
 
-            <input type="email" 
-            required 
-            value={Email}
-            className="bg-white  mb-3"
-             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-             />
+            <input
+                type="email"
+                required
+                value={Email}
+                className="bg-white  mb-3"
+                placeholder="Enter your email"
+                title="Email"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+            />
 
-            <input type="password" name="" id="" 
-            value={Password}
-            className="bg-white mb-3"
-             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}/>
+            <input
+                type="password"
+                name=""
+                id=""
+                value={Password}
+                className="bg-white mb-3"
+                placeholder="Enter your password"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+            />
             <button type="submit" className="bg-blue-500 text-white  mb-3">Login</button>
 
             <p>{message}</p>

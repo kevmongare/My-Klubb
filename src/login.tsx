@@ -1,4 +1,5 @@
 import Logo from "./assets/MKwhite.png"
+import { Link } from 'react-router-dom';
 import Logo1 from "./assets/Mk.png"
 import React, { useState } from "react";
 
@@ -72,6 +73,7 @@ export default function Login(){
           <a href="#" className="text-orange-500 hover:underline">Sign up</a>
         </p>
         <p className="text-orange-600 pt-5">{message}</p>
+        <Link to="/" className="underline hover:text-orange-500">Return to Home Page</Link>
       </div>
     </div>
   </div>

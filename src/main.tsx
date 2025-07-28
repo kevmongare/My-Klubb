@@ -1,21 +1,15 @@
 import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom' // Import BrowserRouter
 import './index.css'
-import App from './App.tsx'
+import App from './App'
 
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-
-import "./login"
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter> {/* Wrap entire app with BrowserRouter */}
       <div className='bg-gray-100'>
-      
         <App />
-    </div>
+      </div>
     </BrowserRouter>
-  </StrictMode>
-);
-
+  </StrictMode>,
+)
